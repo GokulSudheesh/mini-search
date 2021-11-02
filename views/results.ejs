@@ -1,0 +1,14 @@
+<%- include("partials/header") -%>
+    <form action="/search" method="GET">
+        <input type="search" name="q">
+        <input type="submit" value="Search">
+    </form>
+    <% articles.forEach(article => { %>
+        <div>
+            <a href=<%= `/view/${article._id}` %>><%= article.filename %></a>
+            <a href=<%= `/download/${article._id}` %>>Download</a>
+            <p><%= article.description.slice(0, 255) + "..." %></p>
+            <hr>
+        </div>
+    <% }) %>
+<%- include("partials/footer") -%>

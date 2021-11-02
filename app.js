@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", function(req, res){
-    res.render("index", { articles: [] });
+    res.render("index");
 });
 
 app.get("/search", function(req, res){
@@ -35,7 +35,7 @@ app.get("/search", function(req, res){
             res.redirect("/");
         } else {
             // console.log(articles);
-            res.render("index", { articles: articles });
+            res.render("results", { articles: articles });
         }
     });
 });
