@@ -1,14 +1,17 @@
 <%- include("partials/header") -%>
     <form action="/search" method="GET" role="search">
-        <input type="search" name="q">
-        <input type="submit" value="Search">
+        <a id="go-home" type="button" href="/"><i class="fas fa-home"></i></a>
+        <input id="result-search-bar" type="search" name="q" placeholder="Search..." required="true">
+        <button class="home-icon" type="submit"><i style="color: #ffffff;" class="fa fa-search"></i></button>
     </form>
+    <% if(!articles.length) { %>
+        <p>No results found.</p>
+    <% } %>
     <% articles.forEach(article => { %>
-        <div>
-            <a href=<%= `/view/${article._id}` %>><%= article.filename %></a>
+        <div class="searchresult">
+            <a class="heading" href=<%= `/view/${article._id}` %>><%= article.filename %></a>
             <a href=<%= `/download/${article._id}` %>>Download</a>
             <p><%= article.description.slice(0, 255) + "..." %></p>
-            <hr>
         </div>
     <% }) %>
 <%- include("partials/footer") -%>
