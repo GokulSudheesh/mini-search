@@ -1,7 +1,7 @@
 <%- include("partials/header") -%>
     <form action="/search" method="GET" role="search">
         <a id="go-home" type="button" href="/"><i class="fas fa-home"></i></a>
-        <input id="result-search-bar" type="search" name="q" placeholder="Search..." required="true">
+        <input id="result-search-bar" type="search" name="q" value="<%= query %>" required="true">
         <button class="home-icon" type="submit"><i style="color: #ffffff;" class="fa fa-search"></i></button>
     </form>
     <% if(!articles.length) { %>

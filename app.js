@@ -29,7 +29,7 @@ app.get("/search", function(req, res){
             res.redirect("/");
         } else {
             // console.log(articles);
-            res.render("results", { articles: articles });
+            res.render("results", { articles: articles, query: req.query.q });
         }
     });
 });
