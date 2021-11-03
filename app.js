@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const fileUpload = require("express-fileupload");
 const path = require("path");
 const util = require("util");
-const { Schema } = mongoose;
+const Article = require("./article.js");
 
 const port = 3000;
 const app = express();
@@ -11,16 +11,6 @@ const app = express();
 // Connection URL
 const url = "mongodb://localhost:27017/miniSearchDB";
 mongoose.connect(url);
-
-const articleSchema = new Schema(
-    {
-        keyword: String,
-        filename: String,
-        description: String,
-        path: String
-    }
-);
-const Article = mongoose.model("Article", articleSchema);
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
