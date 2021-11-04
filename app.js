@@ -23,7 +23,9 @@ app.get("/", function(req, res){
 
 app.get("/search", function(req, res){
     // console.log(req.query.q);
-    Article.find({ $text: { $search: req.query.q }}, function(err, articles){
+    Article.find({ $text: { $search: req.query.q }}, { score: { $meta: "textScore" } })
+    .sort("score")
+    .exec(function(err, articles){
         if (err) {
             console.error(err);
             res.redirect("/");
@@ -32,6 +34,28 @@ app.get("/search", function(req, res){
             res.render("results", { articles: articles, query: req.query.q });
         }
     });
+});
+
+app.post("/keywords", function(req, res){
+    // console.log(req.body);
+    const query = req.body.q;
+    if (query) {
+        Article.find({ keyword: { $regex: new RegExp(`^${query}.*`, "i") }}, function(err, articles){
+            if (err) {
+                console.error(err);
+                res.send([]);
+            } else {
+                // console.log(articles);
+                // Only get the keywords in a list
+                articles = articles.map((article) => article.keyword);
+                // Remove duplicate keywords
+                articles = articles.filter((keyword, index) => articles.indexOf(keyword) === index);
+                res.send(articles.slice(0, 10));
+            }
+        });
+    } else {
+        res.send([]);
+    }
 });
 
 app.get("/view/:id", function(req, res){
