@@ -1,20 +1,12 @@
 <%- include("partials/header") -%>
 <link rel="stylesheet" href="/styles/upload.css">
-<!-- <form action="/upload" method="POST" enctype="multipart/form-data">
-    <input type="file" name="filename">
-    <input type="text" name="title" placeholder="Title">
-    <input type="text" name="keyword" placeholder="Keyword">
-    <label>Description</label>
-    <textarea name="description" cols="30" rows="10"></textarea>   
-    <input type="submit">
-</form> -->
+
 <a id="go-home" type="button" href="/"><i class="fas fa-home"></i></a>
 <div class="container">
     <form action="/upload" method="POST" enctype="multipart/form-data">
         <div class="row">
             <input type="file" name="filename" id="file" class="inputfile" />
             <label id="file-label" for="file"><i style="color: #ffffff;" class="fas fa-upload"></i> Choose a file</label>
-            <!-- <input type="file" name="filename"> -->
         </div>
         <div class="row">
             <div class="col-25">
