@@ -64,6 +64,9 @@ app.get("/upload", function(req, res){
 
 app.post("/upload", async function(req, res){
     try {
+        if (!(req.body.filename && req.body.keyword)) {
+            throw Error("Missing filename / keyword.");
+        }
         const file = req.files.filename;
         const fileName = file.name;
         const fileSize = file.data.length;
@@ -74,11 +77,11 @@ app.post("/upload", async function(req, res){
 
         await util.promisify(file.mv)(__dirname + filePath);
         // TODO: Send a diff success template
-        res.redirect("/");
+        res.sendFile(__dirname + "/templates/success.html");
     } catch(err) {
         console.error(err);
         // TODO: Send a diff error template
-        res.redirect("/");
+        res.sendFile(__dirname + "/templates/failure.html");
     }
 });
 
