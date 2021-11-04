@@ -1,9 +1,13 @@
 <%- include("partials/header") -%>
     <div id="search-home">
         <form action="/search" method="GET" role="search">
-            <input oninput="getKeywords(this)" class="center" id="home-search-bar" type="search" name="q" placeholder="Search..." required="true">
+            <input oninput="getKeywords(this)" class="center" id="home-search-bar" type="search" name="q" placeholder="Search..." required="true" autocomplete="off">
             <!-- <button class="center home-icon" id="home-submit" type="submit"><i style="color: #ffffff;" class="fa fa-search"></i></button> -->
         </form>
+        <div class="center" id="home-keyword-list" hidden="true">
+            <!-- <p class="keyword-item" onclick="itemClick(this)">Test 1</p>
+            <p class="keyword-item" onclick="itemClick(this)">Test 2</p> -->
+        </div>
         <a class="center home-icon" id="home-upload" type="button" href="/upload"><i style="color: #ffffff;" class="fas fa-upload"></i></a>
     </div>
 <script src="/js/keywordList.js"></script>

@@ -16,6 +16,37 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#home-keyword-list {
+    background-color: #ffffff;
+    width: 50%;
+    margin-top: 75px;
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    line-height: 30px;
+}
+
+#result-keyword-list {
+    z-index: 2;
+    position: absolute;
+    background-color: #ffffff;
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 70px;
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    line-height: 30px;
+}
+
+.keyword-item {
+    padding-left: 5px;
+}
+
+.keyword-item:hover {
+    background-color: #eeeeee;
+}
+
 #home-search-bar {
     background-image: url('/icons/search.png');
     background-repeat: no-repeat;
