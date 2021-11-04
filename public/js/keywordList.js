@@ -19,6 +19,8 @@ function getKeywords(event){
             console.log(data);
             if (data.length) {
                 keywordLists.hidden = false;
+            } else {
+                keywordLists.hidden = true;
             }
             data.forEach(keyword => {
                 keywordLists.innerHTML = `<p class="keyword-item" onclick="itemClick(this)">${keyword}</p>`;
