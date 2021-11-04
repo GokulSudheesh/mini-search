@@ -2,7 +2,8 @@
     <form action="/search" method="GET" role="search">
         <a id="go-home" type="button" href="/"><i class="fas fa-home"></i></a>
         <input id="result-search-bar" type="search" name="q" value="<%= query %>" required="true">
-        <button class="home-icon" type="submit"><i style="color: #ffffff;" class="fa fa-search"></i></button>
+        <!-- <button class="home-icon" type="submit"><i style="color: #ffffff;" class="fa fa-search"></i></button> -->
+        <a class="home-icon" type="button" href="/upload"><i style="color: #ffffff;" class="fas fa-upload"></i></a>
     </form>
     <% if(!articles.length) { %>
         <p>No results found.</p>
