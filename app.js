@@ -76,11 +76,12 @@ app.post("/upload", async function(req, res){
         // console.log(filePath);
 
         await util.promisify(file.mv)(__dirname + filePath);
-        // TODO: Send a diff success template
+        // Add to database
+        const newFileEntry = new Article({ ...req.body, path: filePath });
+        newFileEntry.save();
         res.sendFile(__dirname + "/templates/success.html");
     } catch(err) {
         console.error(err);
-        // TODO: Send a diff error template
         res.sendFile(__dirname + "/templates/failure.html");
     }
 });

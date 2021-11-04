@@ -5,7 +5,7 @@
 <div class="container">
     <form action="/upload" method="POST" enctype="multipart/form-data">
         <div class="row">
-            <input type="file" name="filename" id="file" class="inputfile" />
+            <input type="file" name="filename" id="file" class="inputfile" required="true"/>
             <label id="file-label" for="file"><i style="color: #ffffff;" class="fas fa-upload"></i> Choose a file</label>
         </div>
         <div class="row">
@@ -13,7 +13,7 @@
                 <label for="title">Title</label>
             </div>
             <div class="col-75">
-                <input type="text" id="title" name="filename" placeholder="Title" autocomplete="off">
+                <input type="text" id="title" name="filename" placeholder="Title" autocomplete="off" required="true">
             </div>
         </div>
         <div class="row">
@@ -21,7 +21,7 @@
                 <label for="keyword">Keywords</label>
             </div>
             <div class="col-75">
-                <input type="text" id="keyword" name="keyword" placeholder="Keywords (Separated by spaces)" autocomplete="off">
+                <input type="text" id="keyword" name="keyword" placeholder="Keywords (Separated by spaces)" autocomplete="off" required="true">
             </div>
         </div>
         <div class="row">
