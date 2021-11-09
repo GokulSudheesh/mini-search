@@ -10,7 +10,7 @@ const app = express();
 
 // Connection URL
 const url = "mongodb://localhost:27017/miniSearchDB";
-mongoose.connect(url);
+mongoose.connect(url).catch(err => console.error(err));
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
