@@ -1,0 +1,154 @@
+{
+    "files": [
+        {
+            "keyword": "Image segmentation",
+            "filename": "Image Segmentation Using Deep Learning A Survey",
+            "path": "files\\Image_Segmentation_Using_Deep_Learning_A_Survey.pdf"
+        },
+        {
+            "keyword": "Image segmentation",
+            "filename": "K-Net Towards Unified Image Segmentation",
+            "path": "files\\K-Net_Towards_Unified_Image_Segmentation.pdf"
+        },
+        {
+            "keyword": "Image segmentation",
+            "filename": "PointFlow Flowing Semantics Through Points for Aerial Image Segmentation",
+            "path": "files\\PointFlow_Flowing_Semantics_Through_Points_for_Aerial_Image_Segmentation.pdf"
+        },
+        {
+            "keyword": "Image segmentation",
+            "filename": "TransUNet Transformers Make Strong Encoders for Medical Image Segmentation",
+            "path": "files\\TransUNet_Transformers_Make_Strong_Encoders_for_Medical_Image_Segmentation.pdf"
+        },
+        {
+            "keyword": "Image segmentation",
+            "filename": "UTNet A Hybrid Transformer Architecture for Medical Image Segmentation",
+            "path": "files\\UTNet_A_Hybrid_Transformer_Architecture_for_Medical_Image_Segmentation.pdf"
+        },
+        {
+            "keyword": "Image segmentation",
+            "filename": "Using Machine Learning for Web Page Classification in Search Engine Optimization",
+            "path": "files\\Using_Machine_Learning_for_Web_Page_Classification_in_Search_Engine_Optimization.pdf"
+        },
+        {
+            "keyword": "Lane segmentation",
+            "filename": "A Deep Learning-Based Benchmarking Framework for Lane Segmentation in the Complex and Dynamic Road Scenes",
+            "path": "files\\A_Deep_Learning-Based_Benchmarking_Framework_for_Lane_Segmentation_in_the_Complex_and_Dynamic_Road_Scenes.pdf"
+        },
+        {
+            "keyword": "Lane segmentation",
+            "filename": "A Fast and Robust Lane Detection Method Based on Semantic Segmentation and Optical Flow Estimation",
+            "path": "files\\A_Fast_and_Robust_Lane_Detection_Method_Based_on_Semantic_Segmentation_and_Optical_Flow_Estimation.pdf"
+        },
+        {
+            "keyword": "Lane segmentation",
+            "filename": "A novel multimodal fusion network based on a joint coding model for lane line segmentation",
+            "path": "files\\A_novel_multimodal_fusion_network_based_on_a_joint_coding_model_for_lane_line_segmentation.pdf"
+        },
+        {
+            "keyword": "Lane segmentation",
+            "filename": "A Review of Lane Detection Based on Semantic Segmentation",
+            "path": "files\\A_Review_of_Lane_Detection_Based_on_Semantic_Segmentation.pdf"
+        },
+        {
+            "keyword": "Lane segmentation",
+            "filename": "Keep Your Eyes on the Lane Real Time Attention Guided Lane Detection",
+            "path": "files\\Keep_Your_Eyes_on_the_Lane_Real_Time_Attention_Guided_Lane_Detection.pdf"
+        },
+        {
+            "keyword": "Lane segmentation",
+            "filename": "Key Points Estimation and Point Instance Segmentation Approach for Lane Detection",
+            "path": "files\\Key_Points_Estimation_and_Point_Instance_Segmentation_Approach_for_Lane_Detection.pdf"
+        },
+        {
+            "keyword": "Search Engine Optimization",
+            "filename": "A representative online survey among German search engine users with a focus on questions regarding search engine optimization SEO a study within the SEO Effect project",
+            "path": "files\\A_representative_online_survey_among_German_search_engine_users_with_a_focus_on_questions_regarding_search_engine_optimization_SEO_a_study_within_the_SEO_Effect_project.pdf"
+        },
+        {
+            "keyword": "Search Engine Optimization",
+            "filename": "Content Management Systems Performance and Compliance Assessment Based on a Data Driven Search Engine Optimization Methodology",
+            "path": "files\\Content_Management_Systems_Performance_and_Compliance_Assessment_Based_on_a_Data_Driven_Search_Engine_Optimization_Methodology.pdf"
+        },
+        {
+            "keyword": "Search Engine Optimization",
+            "filename": "Development and software implementation of a preliminary model to identify the probability of search engine optimization on webpages",
+            "path": "files\\Development_and_software_implementation_of_a_preliminary_model_to_identify_the_probability_of_search_engine_optimization_on_webpages.pdf"
+        },
+        {
+            "keyword": "Search Engine Optimization",
+            "filename": "The influence of search engine optimization on Google\u00e2\u20ac\u2122s results",
+            "path": "files\\The_influence_of_search_engine_optimization_on_Google\u00e2\u20ac\u2122s_results.pdf"
+        },
+        {
+            "keyword": "Search Engine Optimization",
+            "filename": "Using Machine Learning for Web Page Classification in Search Engine Optimization",
+            "path": "files\\Using_Machine_Learning_for_Web_Page_Classification_in_Search_Engine_Optimization.pdf"
+        },
+        {
+            "keyword": "Search Engine Optimization",
+            "filename": "Web search basics and SEO",
+            "path": "files\\Web_search_basics_and_SEO.pptx"
+        },
+        {
+            "keyword": "Bitcoin Mining",
+            "filename": "An Equilibrium Model of the Market for Bitcoin Mining",
+            "path": "files\\An_Equilibrium_Model_of_the_Market_for_Bitcoin_Mining.pdf"
+        },
+        {
+            "keyword": "Bitcoin Mining",
+            "filename": "Conditions for Advantageous Quantum Bitcoin Mining",
+            "path": "files\\Conditions_for_Advantageous_Quantum_Bitcoin_Mining.pdf"
+        },
+        {
+            "keyword": "Bitcoin Mining",
+            "filename": "Incentive Mechanism for Rational Miners in Bitcoin Mining Pool",
+            "path": "files\\Incentive_Mechanism_for_Rational_Miners_in_Bitcoin_Mining_Pool.pdf"
+        },
+        {
+            "keyword": "Bitcoin Mining",
+            "filename": "MiningVis Visual Analytics of the Bitcoin Mining",
+            "path": "files\\MiningVis_Visual_Analytics_of_the_Bitcoin_Mining.pdf"
+        },
+        {
+            "keyword": "Bitcoin Mining",
+            "filename": "On Game-theoretic Computation Power Diversification in the Bitcoin Mining Network",
+            "path": "files\\On_Game-theoretic_Computation_Power_Diversification_in_the_Bitcoin_Mining_Network.pdf"
+        },
+        {
+            "keyword": "Bitcoin Mining",
+            "filename": "Visual analytics of bitcoin mining pool evolution on the road toward stability",
+            "path": "files\\Visual_analytics_of_bitcoin_mining_pool_evolution_on_the_road_toward_stability.pdf"
+        },
+        {
+            "keyword": "Quantum computing",
+            "filename": "Medical image classification via quantum neural networks",
+            "path": "files\\Medical_image_classification_via_quantum_neural_networks.pdf"
+        },
+        {
+            "keyword": "Quantum computing",
+            "filename": "Quantum Computing at the Frontiers of Biological Sciences",
+            "path": "files\\Quantum_Computing_at_the_Frontiers_of_Biological_Sciences.pdf"
+        },
+        {
+            "keyword": "Quantum computing",
+            "filename": "Quantum computing enhanced computational catalysis",
+            "path": "files\\Quantum_computing_enhanced_computational_catalysis.pdf"
+        },
+        {
+            "keyword": "Quantum computing",
+            "filename": "Quantum computing models for artificial neural networks",
+            "path": "files\\Quantum_computing_models_for_artificial_neural_networks.pdf"
+        },
+        {
+            "keyword": "Quantum computing",
+            "filename": "Rodeo Algorithm for Quantum Computing",
+            "path": "files\\Rodeo_Algorithm_for_Quantum_Computing.pdf"
+        },
+        {
+            "keyword": "Quantum computing",
+            "filename": "The prospects of quantum computing in computational molecular biology",
+            "path": "files\\The_prospects_of_quantum_computing_in_computational_molecular_biology.pdf"
+        }
+    ]
+}
