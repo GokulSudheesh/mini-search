@@ -6,6 +6,18 @@ import os
 
 script_dir = pathlib.Path(__file__).parent.resolve()
 
+class Button(tk.Button):
+    def __init__(self, path, filename, master, i):
+        super().__init__(master)
+        self.path = path
+        self.button = tk.Button(master, 
+                text=filename, command=self.open_file)
+        self.button.grid(row=5+i, column=1)
+
+    def open_file(self):
+        print(f"Opening {self.path}...")
+        os.system(f'start /max {self.path}')
+
 class App(tk.Frame):
     def __init__(self, master):
         super().__init__(master)
@@ -30,7 +42,9 @@ class App(tk.Frame):
 
     def get_results(self):
         for result in self.result_btns:
-            result.destroy()
+            result.button.destroy()
+        self.result_btns.clear()
+        print(self.result_btns)
 
         q = self.search_field.get()
         rows = query(q).fetchall()
@@ -38,15 +52,10 @@ class App(tk.Frame):
             self.results_meta.config(text = f"Found {len(rows)} results.")
         else:
             self.results_meta.config(text = "No results found")
-            self.results_meta.text = "swookays"
 
         for i, row in enumerate(rows):
             path = os.path.join(script_dir, row[3])
-            result = tk.Button(self.master, 
-                text=row[2], command=lambda: self.open_file(path))
-            result.grid(row=5+i, column=1, sticky=tk.W, pady=4)
-            # print(result)
-            self.result_btns.append(result)
+            self.result_btns.append(Button(path, row[2], self.master, i))
         # print(rows)
     
     def open_file(self, path):
